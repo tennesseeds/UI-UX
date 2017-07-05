@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body>
+<!-- 
+<input type="text">
+<input type="color">
+<input type="radio">
+<input type="password"> 
+<button>Login</button> 
+-->
+
+<h1>Sign In</h1>
+
+<!-- action = where the form sends data to -->
+<!-- method = what HTTP method (get/post) -->
+<!-- <form action="http://widipedia.org"method="GET"> -->
+
+<form action="http://www.wikipedia.org" method="post">
+
+<!-- 
+	<label>for="Username:"
+		<input id="Username" type = "text" >
+	</label>
+
+	<label>for="Password:"
+		<input id="Password" type = "password" >
+	</label> -->
+
+	<label for="username:">Email:</label>
+	<input id="username" type = "email" placeholder="Enter Email" required>
+	<label for="password:">Password:</label>
+	<input id="password" type = "password" placeholder="password" required>
+	
+	<input type="submit">	
+</form>
+
+</body>
+</html>

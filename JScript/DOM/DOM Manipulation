@@ -1,0 +1,105 @@
+DOM Manipulation
+
+we're going to cover different ways of 
+
+-changing an element's style
+-adding/removing classes
+-changing the content of a tag
+-changing the attributes(src, href, etc.)
+
+------------Style (property)--------------------
+
+The style property is one way to manipulate an element's style
+
+Remember the right side must be a string.  Unlike css, this is js.  So, js rules must be followed.
+
+//SELECT
+var tag = document.getElementById("highlight");
+
+//Manipulate
+tag.style.color="blue";
+tag.style.border = "10px solid red";
+tag.style.fontsize = "70px";
+tag.style.background = "yellow";
+tag.style.marginTop = "200px";
+
+file:///G:/WebDevBootcamp/JScript/DomDemo.html
+
+var h1 = document.querySelector("h1");
+undefined
+h1.style.color="yellow";
+"yellow"
+h1.style.border = "5 px solid pink";
+"5 px solid pink"
+h1.style.border = "5px solid pink";
+"5px solid pink"
+
+If you find yourself manipulating a lot of style properties as above there is a better way.
+
+It is recommended for styles to be defined in a separate file or files.  The style property allows for quick syling, for example for testing purposes. -MDN
+
+-----------Separation of concerns--------------
+Structure -html
+behavior -js
+presentation -css
+http://blog.teamtreehouse.com
+it is expected to have some overlap between the three, but just a little.
+
+--------An Alternative--------------------------
+Rather than directly manipulating style with JS, we can define a CSS class and then toggle it on or off with JS
+
+//INSTEAD OF THIS:
+var tag = document.getElementById("highlight");
+tag.style.color = "blue";
+tag.style.border = "10px solid red";
+
+/*DEFINE A CLASS IN CSS*/
+.some-class{
+	color:blue;
+	border: 10px solid red;
+}
+
+var tag = document.getElementById("highlight");
+//ADD THE NEW CLASS TO THE SELECTED ELEMENT
+tag.classList.add("some-class");
+
+---------------------------------------------
+--------------classList---------------------
+A read-only list that contains the classes for a given element.  It is NOT AN ARRAY.
+
+/*DEFINE A CLASS IN CSS*/
+.another-class{
+	color: purple;
+	fontSize: 76px;
+}
+
+var tag = document.querySelector("h1");
+
+//ADD A CLASS TO THE SELECTED ELEMENT
+tag.classList.add("another-class");
+
+//REMOVE A CLASS
+tag.classList.remove("another-class");
+
+//TOGGLE A CLASS
+tag.classList.toggle("another-class");
+
+
+var p = document.querySelector("p")
+undefined
+p
+<p>​…​</p>​
+p.classList
+[]
+p.classList.add("big");
+undefined
+p.classList.remove("big");
+undefined
+p.classList.toggle("big");
+true
+p.classList.toggle("big");
+false
+
+
+Could use this toggle on a todo list where done creates a strike-thru or removes the strike-thru
+

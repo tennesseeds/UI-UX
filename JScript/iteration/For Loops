@@ -1,0 +1,70 @@
+For Loops
+for(init; condition; iteration){
+	some code
+}
+
+============================================
+
+EXAMPLE 1
+
+Printing numbers from 1-5 with a for loop
+
+for(var count = 0; count < 6; count++){
+	console.log(count);
+}
+
+
+VS while loop
+
+Printing numbers from 1-5 with a for loop
+
+var count = 1;
+
+while(count < 6){
+	console.log("count is: " + count);
+	count++;
+}
+
+==============================================
+
+EXAMPLE 2
+
+Printing each character in a string with a for loop
+
+var str = "hello";
+
+for(var i = 0; i < str.length; i++){
+	console.log(str[i]);
+}
+
+VS while loop
+var str = "hello";
+var count = 0;
+
+while(count< str.length) {
+	console.log(str[count]);
+	count++;
+}
+
+=====================================================
+EXERCISE 1
+
+for(var i = 0; i<16; i+=8){
+	console.log(i);
+}
+0
+8
+
+=====================================================
+EXERCISE 2
+
+var str = "ahceclwlxo";
+
+for(var i = 1; i < str.length; i+=2){
+	console.log(str[i]);
+}
+h
+e
+l
+l
+o

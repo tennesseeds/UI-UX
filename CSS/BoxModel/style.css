@@ -1,0 +1,26 @@
+p{
+
+/*Content -Width and Height*/
+
+width: 50%;
+/*height: 300px;*/
+/*Border*/
+
+border: 2px solid blue;
+
+/*Padding*/
+padding: 10px;
+/*Margin*/
+/*margin:100px;
+margin-top:500px;*/
+
+/*margin: top right bottom left  <---clockwise from the top*/
+/*margin: 20px 40px 500px 100px;*/
+
+/*margin: 0 auto 0 auto;*/
+/*same as below but 0 is for top and bottom
+and auto is for left to right (centered)*/
+/*margin: 0 auto;*/
+
+margin: 50px 20px;
+}

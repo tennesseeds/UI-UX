@@ -1,0 +1,54 @@
+
+/*	Selector {
+		property:value;
+	}*/
+
+/*width
+color
+style*/
+/*border-color: */
+	h1 {
+		/*color : red;*/
+
+/*		hexidecimal number system
+		the First 2 digits represent Red 
+		The 3rd & 4th represent Green 
+		The 5th & 6th represent Blue*/
+		color: #130F63;
+/*		border-color: purple;
+		border-width: 5px;
+		border-style:solid;
+
+		OR do the following*/
+
+		border: 8px dashed rgb(0,102,51);
+
+		
+	}
+	li {
+		/*RGB have 3 channels
+		Red, Green, Blue.  Each ranges from 0-255*/
+		color : rgb(0,102,51);
+
+	}
+	h4 {
+
+		/*RGBA, A stands for Alphs and it is 
+		just like RGB except it has a 4th channel 
+		alpha"(transparency) Ranges from 0.0-1.0 */
+		color : RGBA(11,99,150,.5);
+	}
+
+	h3 {
+		background : rgb(255,100,80);
+	}
+
+	body {
+		/*background: pink;*/
+
+		background: url(http://needforseat.website/wp-content/uploads/2015/09/wood-grain-texture-black-and-white-tileable-wood-grain-texture---home-decorating-ideas-picture.jpg);
+/*		background-repeat: no-repeat;*/
+/*		background-size: cover;	*/
+			
+	}
+

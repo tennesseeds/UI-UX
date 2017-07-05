@@ -1,0 +1,69 @@
+==========INTRO TO THE DOM===================
+Finally, js meets HTML + CSS
+
+-------------Objectives----------------------
+-Define what the DOM is
+-Understand why DOM Manipulation is awesome
+-List a few examples of sites that use JS to 
+	manipulate the DOM
+-Understand the SELECT, then MANIPULATE workflow
+
+Why should you care?
+
+A few Examples:
+Games
+Scrolling Effects
+Dropdown Menus
+Form Validations
+Interactivity
+Animations
+Every awesome site ever
+
+
+Example sites:
+Google.com -when you start to type your search
+Udemy.com -browse menu
+patatap.com - start typing -cool website!
+
+
+===========THE DOM===========================
+Document Object Model
+
+The Document Object Model is the interface between your Javascript and HTML + CSS
+
+go to dev tools and type
+document doesnt' really give DOM
+
+type instead
+console.dir(document);
+
+==================================================================
+The PROCESS
+------------------------------------------------------------------
+SELECT an element and then MANIPULATE
+
+For example, we can change the <h1> color using JS
+
+var h1 = document.querySelector("hi");
+SELECT the <h1> and save to a variable
+
+var h1 = document.querySelector("hi");
+h1.style.color = "pink";
+
+The above manipulates the <h1> we selected.
+
+------------------------Example----------------------------------
+var body = document.querySelector("body");  //Select
+var isBlue = false;
+
+setInterval(function(){
+	if(isBlue){
+	body.style.background = "white";
+	}else {
+	body.style.background = "#3498db";//<--blue
+	}
+	isBlue = !isBlue;//<---changes isBlue back to false
+}, 1000);
+
+The header background now blinks between white and blue every one second.  Keeps going forever....
+Remember Select/Manipulate

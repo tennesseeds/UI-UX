@@ -1,0 +1,34 @@
+==========INTRO TO THE DOM===================
+Finally, js meets HTML + CSS
+
+-------------Objectives----------------------
+-Define what the DOM is
+-Understand why DOM Manipulation is awesome
+-List a few examples of sites that use JS to 
+	manipulate the DOM
+-Understand the SELECT, then MANIPULATE workflow
+
+Why should you care?
+
+A few Examples:
+Games
+Scrolling Effects
+Dropdown Menus
+Form Validations
+Interactivity
+Animations
+Every awesome site ever
+
+
+Example sites:
+Google.com -when you start to type your search
+Udemy.com -browse menu
+patatap.com - start typing -cool website!
+
+
+===========THE DOM===========================
+Document Object Model
+
+The Document Object Model is the interface between your Javascript and HTML + CSS
+
+

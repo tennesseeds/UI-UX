@@ -1,0 +1,67 @@
+DOM Methods
+
+document.URL
+document.links
+document.head
+document.body
+-------------------------------------------------
+document.getElementsById()
+-------------------------------------------------
+var tag = document.getElementById("highlight");
+console.dir(tag);
+li#highlight
+--------------------------------------------------
+document.getElementsByClassName()
+--------------------------------------------------
+var tags = document.getElementsByClassName("bolded");
+tags
+[<li class=​"bolded">​List Item 2​</li>​, 
+<li class=​"bolded">​List Item 3​</li>​] //list not an aray.  Called a "node list"
+console.dir(tags);
+--------------------------------------------------
+document.getElementsByTagName()
+--------------------------------------------------
+var tags = document.getElementsByTagName("li");
+undefined
+tags
+[//node list
+<li id=​"highlight">​List Item 1​</li>​, 
+<li class=​"bolded">​List Item 2​</li>​, 
+<li class=​"bolded">​List Item 3​</li>​
+]
+console.dir(tags);
+--------------------------------------------------document.querySelector()
+--------------------------------------------------
+Important note: this selector only selects the first tag.  
+document.querySelector("#highlight");
+document.querySelector(".bolded");
+
+var h1 = document.querySelector("h1");
+undefined
+h1
+<h1>​Hello​</h1>​
+var li = document.querySelector("#highlight");
+undefined
+li
+<li id=​"highlight">​List Item 1​</li>​
+var li = document.querySelector(".bolded");
+undefined
+li
+<li class=​"bolded">​List Item 2​</li>​
+var li = document.querySelector("li a.special");//valid
+--------------------------------------------------
+document.querySelectorAll()
+--------------------------------------------------
+Returns a list of elements that matches a given CSS-style selector
+
+var li = document.querySelectorAll("li");
+
+//returns all li objects.  These are not html.
+li
+[
+<li id=​"highlight">​List Item 1​</li>​, 
+<li class=​"bolded">​List Item 2​</li>​, 
+<li class=​"bolded">​List Item 3​</li>​
+]
+
+

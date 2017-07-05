@@ -1,0 +1,48 @@
+<snippet>
+	<content><![CDATA[
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+
+		</title>
+		<!-- Latest compiled and minified Bootstrap CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<!-- Optional theme. Remove comment to use -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> -->
+		
+		<!-- This is FontAwesome Fonts uncomment to use FontAwesome fonts-->
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+		<!-- Google Fonts -->
+		<!-- 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> -->
+
+		<!-- Enter project specific CSS here -->
+		<link rel="stylesheet" type="text/css" href=" ">
+		
+	</head>
+
+	<!-- ---------Body starts here------------- -->
+	
+	<body>
+
+
+		
+
+		<!-- This is JQuery MUST COME BEFORE JavaScript-->
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>htmljs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description>This includes Bootstrap CSS CDN, Bootstrap JS CDN and Jquery CDN</description>
+</snippet>
